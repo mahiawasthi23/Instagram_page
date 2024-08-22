@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1e5e5e8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mobile-frame {
+    width: 375px; 
+    height: 667px; 
+    border: 16px solid #000;
+    border-radius: 36px;
+    padding: 16px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-container h1 {
+    font-size: 1.2rem;
+}
+
+.header-icons .icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.post {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16/9;
+}
+
+
+.post-footer {
+    padding: 10px;
+}
+
+.post-footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.likes {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.caption {
+    margin: 5px 0;
+}
+
+.view-comments {
+    color: #888;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-icons .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 0.9rem;
+    }
+
+    .header-icons .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
